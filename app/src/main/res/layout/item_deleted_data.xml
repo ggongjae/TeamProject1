@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/deleted_elder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/deleted_time"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/delete_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어르신"
+            app:layout_constraintStart_toEndOf="@id/deleted_elder_name"
+            app:layout_constraintBottom_toBottomOf="@id/deleted_elder_name"
+            android:layout_marginStart="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/deleted_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/deleted_elder_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/deleted_elder_name"
+            android:textSize="17dp"
+            android:text="Time"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/deleted_time"
+            app:layout_constraintTop_toTopOf="@id/deleted_time"
+            android:text="삭제"
+            android:textSize="17dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageButton
+            android:id="@+id/restore_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/return_time"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

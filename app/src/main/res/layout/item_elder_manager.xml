@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/upper_shadow_todo"/>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_elder_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_less_button"
+        android:backgroundTint="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/elder_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/elder_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/elder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="김복남"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/elder_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="어르신"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/elder_name"
+            app:layout_constraintStart_toEndOf="@id/elder_name"
+            />
+
+        <Button
+            android:id="@+id/elder_delete_btn"
+            android:layout_width="50dp"
+            android:layout_height="27dp"
+            android:background="@drawable/round_more_button"
+            android:backgroundTint="@color/gray"
+            android:text="삭제"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="10dp"/>
+
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/elder_btn"-->
+        <!--            android:layout_width="60dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:src="@drawable/arrow_forward"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            android:backgroundTint="@android:color/transparent"-->
+        <!--            android:background="@drawable/round_button"/>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
